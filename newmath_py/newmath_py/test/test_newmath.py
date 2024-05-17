@@ -1,5 +1,12 @@
 import unittest
+
+import os
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
+
 import newmath
+
+
 
 class NewmathTestCase(unittest.TestCase):
   def test_divide_by_number(self):
